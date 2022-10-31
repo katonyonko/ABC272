@@ -104,6 +104,6 @@ for __ in range(case_no):
   ans=0
   tmp=0
   for i in range(6*N):
-    if sais[i]<N: tmp+=1
-    elif 3*N<=sais[i]<4*N: ans+=tmp
+    if 0<sais[i]<=N: tmp+=1
+    elif 3*N<sais[i]<=4*N: ans+=tmp
   print(ans)
